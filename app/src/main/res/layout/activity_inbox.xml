@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InboxActivity">
+
+    <TextView
+        android:id="@+id/search_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/searchview_bg_activity_inbox"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_margin="8dp"
+        android:text="    search"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/search_fragment1"
+        app:layout_constraintBottom_toBottomOf="@id/search_fragment1"
+        app:layout_constraintLeft_toLeftOf="@id/search_fragment1"
+        app:layout_constraintRight_toRightOf="@id/search_fragment1"
+        android:src="@drawable/ic_search_grey_16dp"
+        android:layout_marginRight="50dp"/>
+
+    <ListView
+        android:id="@+id/listview_inbox_activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/search_fragment1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"/>
+
+</android.support.constraint.ConstraintLayout>

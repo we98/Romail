@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textview_romail_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Romail"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorWhiteTransparent3"
+        android:gravity="center"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.23"/>
+
+    <LinearLayout
+        android:id="@+id/linear_emailinfo_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textview_romail_activity_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintWidth_percent="0.8">
+
+        <EditText
+            android:id="@+id/edittext_account_activity_login"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Account"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteTransparent3"
+            android:background="@drawable/edittext_bg_corner_left_activity_login"
+            android:paddingStart="50dp" />
+
+        <Spinner
+            android:id="@+id/spinner_email_activity_login"
+            android:entries="@array/emailtype"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:spinnerMode="dialog"
+            android:dropDownWidth="100dp"
+            android:background="@drawable/edittext_bg_corner_right_activity_login"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/linear_emailinfo_activity_login"
+        app:layout_constraintBottom_toBottomOf="@id/linear_emailinfo_activity_login"
+        app:layout_constraintStart_toStartOf="@id/linear_emailinfo_activity_login"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_person_black_24dp"/>
+
+    <EditText
+        android:id="@+id/edittext_password_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhiteTransparent3"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_bg_activity_login"
+        app:layout_constraintTop_toBottomOf="@+id/linear_emailinfo_activity_login"
+        app:layout_constraintStart_toStartOf="@+id/linear_emailinfo_activity_login"
+        app:layout_constraintEnd_toEndOf="@+id/linear_emailinfo_activity_login"
+        android:layout_marginTop="20dp"
+        android:paddingStart="50dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/edittext_password_activity_login"
+        app:layout_constraintBottom_toBottomOf="@id/edittext_password_activity_login"
+        app:layout_constraintStart_toStartOf="@id/edittext_password_activity_login"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_password_black_24dp"/>
+
+    <Button
+        android:id="@+id/buttonlogin_login_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/buttonlogin_bg_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/edittext_password_activity_login"
+        app:layout_constraintStart_toStartOf="@id/edittext_password_activity_login"
+        app:layout_constraintEnd_toEndOf="@id/edittext_password_activity_login"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/buttonmore_login_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="More information click here"
+        android:textColor="@color/colorWhiteTransparent3"
+        android:background="@drawable/buttonmore_bg_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/buttonlogin_login_activity_login"
+        app:layout_constraintStart_toStartOf="@id/buttonlogin_login_activity_login"
+        app:layout_constraintEnd_toEndOf="@id/buttonlogin_login_activity_login"
+        android:layout_marginTop="25dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
